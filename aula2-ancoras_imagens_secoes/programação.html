@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=" discription" content="">
+    <title>SECITEX</title>
+</head> <!--marcações de seção para separar as áreas da pagina-->
+<body>
+    <header>
+        <h1>SECITEX - SEMANA DE CIÊNCIAS, TECNOLOGIA E EXTENSÃO</h1>
+        <nav>
+            <ol>
+                <li> <a href="programação.html">Programação</a></li>
+                <li> <a href="palestras.html">Palestras</a></li>
+                <li> <a href="inscricao.html">Inscrição</a></li>
+                <li> <a href="contato.html">Contato</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main> <!-- marcação de main representa a área de conteúdo da página-->
+        <section>
+            <h2>DESTAQUE</h2>
+
+            <figure> <!-- não é obrigatória mas é como se fosse a tag de <p> para colocar o texto, pode ta dentro de outras tags-->
+                <img src="foto_em_grupo.png" alt="Foto das pessoas que participaram da secitex 2023">
+            </figure>
+        </section>
+        <section>
+            <h2>PROGRAMAÇÃO</h2>
+            <table border="1">
+                <tr> <!--Table row - linha fora da tabela-->
+                    <th>Atividade</th> <!--table head - célula do cabeçalho-->
+                    <th>Dia/hora</th>
+                </tr>
+                <tr>
+                    <td>Palesrtra de andré Isaque</td> <!--table data - célula de dados-->
+                    <td>11/09 às 14h</td>
+                </tr>
+                <tr>
+                    <td>Palestra de Deyvid Jhonatan</td>
+                    <td>11/09 às 15h</td>
+                </tr>
+                <tr>
+                    <td>Plestra de Gabriel Albino e Gabriel Isaias</td>
+                    <td>11/09 às 16h</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">célula mesclagem vertical exemplo</td>
+                    <td>teste</td>
+                </tr>
+                <tr>
+                    <td>teste</td> <!--colocar uma a menos pq vai mesclar com a de cima-->
+                </tr>
+                <tr><!--mescla a coluna-->
+                    <td colspan="2">célula mesclada horizontal exemplo</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <address>
+            Av. Senador Slagado Filho, 5487
+        </address>
+        <nav>
+            <ul>
+                <li> <a href="">Twitter</a></li>
+                <li> <a href="">Insta</a></li>
+                <li> <a href="">YouTube</a></li>
+            </ul>
+            <p>Desenvolvido por IFRN.</p>
+        </nav>
+    </footer>
+</body>
+</html>
