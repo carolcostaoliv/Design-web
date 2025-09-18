@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fles-basis</title>
+    <style>
+        section{
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 2rem;
+            display: flex;
+            gap: 1rem; /*espaçamento entre os filhos*/
+            flex-wrap: wrap; /*para conseguir é nascessário colocar wrap, quebra linha*/
+        }
+        section > h2{
+            flex-basis: 100%; /*faz com que o texto ocupe uma linha toda, ficando na parte de cima, largura*/
+            background-color: aliceblue;
+            padding: 1rem;
+        }
+        section > div{
+            background-color: rgb(203, 225, 247);
+            padding: 1rem;
+            flex-basis: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>NOTÍCIAS</h2> <!--section precisa ter título-->
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laudantium laboriosam magni mollitia voluptas obcaecati beatae porro eius, deleniti nobis alias ad necessitatibus amet quis tenetur soluta a totam? Ab.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laudantium laboriosam magni mollitia voluptas obcaecati beatae porro eius, deleniti nobis alias ad necessitatibus amet quis tenetur soluta a totam? Ab.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laudantium laboriosam magni mollitia voluptas obcaecati beatae porro eius, deleniti nobis alias ad necessitatibus amet quis tenetur soluta a totam? Ab.</p>
+            </div>
+            <h2>NOTÍCIAS</h2> <!--section precisa ter título-->
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laudantium laboriosam magni mollitia voluptas obcaecati beatae porro eius, deleniti nobis alias ad necessitatibus amet quis tenetur soluta a totam? Ab.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laudantium laboriosam magni mollitia voluptas obcaecati beatae porro eius, deleniti nobis alias ad necessitatibus amet quis tenetur soluta a totam? Ab.</p>
+            </div>
+             <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita laudantium laboriosam magni mollitia voluptas obcaecati beatae porro eius, deleniti nobis alias ad necessitatibus amet quis tenetur soluta a totam? Ab.</p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIGN-ITENS</title>
+    <style>
+    *{
+        margin: 0%; /*como ta definindo a altura 100, se tirar fica com barra de rolagem*/
+        padding: 0%;
+    }
+    body{
+        height: 100vh; /*altura do viewport*/ /*vh - altura, para ele ocupar todo o espaço da tela*/
+        display: flex; /*margin:0 auto colocaria apenas no centro horizontal, pode estar em outras marcações, ex: formulario dentro da section*/
+        justify-content: center; /*alinhamento horizontal*/
+        align-items: center; /*alinhamento vertical, o body precisa ser maior que o item que eu quero centralizar*/
+    }
+    section{
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 20rem;
+        height: 20rem;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>SECITEX
+        <form action="">
+            login
+        </form>
+        </h1>
+    </section>
+</html>
