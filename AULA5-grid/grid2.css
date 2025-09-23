@@ -1,0 +1,32 @@
+main{
+    display: grid;
+    grid-template-areas: 
+    "n a a b c"
+    "n d d d c"
+    "n e e e c";
+    grid-template-rows: 10rem 10rem 10rem;
+    gap: 1rem;
+}
+section{
+    border: 1px solid black;
+    padding-left: 5rem;
+    background-color: rgb(220, 237, 248);
+}
+section.n{
+    grid-area: n;
+}
+section.a{
+    grid-area: a;
+}
+section.b{
+    grid-area: b;
+}
+section.c{
+    grid-area: c;
+}
+section.d{
+    grid-area: d;
+}
+section.e{
+    grid-area: e;
+}

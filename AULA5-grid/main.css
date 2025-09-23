@@ -1,0 +1,36 @@
+main{
+    display: grid; /*colcoar o grid na mae/contender*/
+    /* grid-template-areas: 
+    "a a"
+    "b c"
+    ". d"; organizar as áreas na tela */
+    /*
+    1- colocar todos so filhos
+    2- nao pode mesclar verticalmente
+    3- espaço vazio = .
+    */
+    grid-template-areas:
+    "a a d"
+    "b c d"; 
+    gap: 1rem;
+    grid-template-columns: 1fr 3fr 1fr; /*um e 1/5 3/5 1/5*/ /*duas colunas = dois valores*/
+    grid-template-rows: 20rem 20rem; /*altura da linha*/ /*duas linhas = dois valores*/ /*cidado ao definir a altura das linhas porque o contudo pode ser maior do que a área disponível*/
+
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto; /*barra  de rolagem dentro da section pra caber o conteúdo*/
+}
+section.noticias{
+    grid-area: a; /*a definição de variável para cada área do grid é obrigatória*/
+}
+section.comemoracoa{
+    grid-area: b;
+}
+section.organizadores{
+    grid-area: c;
+}
+section.corrida{
+    grid-area: d;
+}
