@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed; /* deixa a marcação fixa na sua posição, a marcação "perde" a largura, muda o comportamento para display: inline-block*/
+    margin-top: 0;
+    width: 100vw; /*para ocupar toda a largura*/
+    top: 0;/*par deixar colado na parte de cima*/
+}
+header, footer, section{
+    padding: 2rem;
+    margin: 0 0 2rem 0;
+    background-color: lightblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+}
+header, footer{
+    background-color: rgb(255, 237, 252);
+    text-align: center;
+}
+main{
+    margin-top: 7rem; /*como o header ficou fixo na parte e cima, o main precisa ter um espaçamento em cima*/
+}
+div#banner{
+    background-color: rgb(248, 218, 248);
+    padding: 2rem;
+    height: 20rem;
+    width: 20rem;
+    position: absolute; /*o banner não fica grudado na tela quando rolamos a tela de rolagem, fica fixo apenas em uma parte de página*/
+    /*top, left, right bottom, escolher penas 2, o eixo x e y, NAO usar margin quando colocar position*/
+    z-index: 3; /*a ordem de sobreposição  das canadas*/
+}
+div#esmaecer{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    justify-content: center; /*horizontalmente*/
+    align-items: center; /*verticlasmente*/
+    display: flex;
+}
+h2{
+    position: relative;
+    top: 30px; /*não perde seu espaço no html*/
+}
