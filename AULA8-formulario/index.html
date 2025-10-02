@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para viagem de campo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Inscrição para viagem de campo</h1>
+    <form action="dadosenviados.html"></form> <!--para onde vai enviar os davos-->
+        <label for="nome">*Nome: </label>
+        <input type="text" placeholder="nome" id = "nome"> <!--required faz com que seja obrigatorio ser preenchido-->
+        <br> <!--palceholder deixa escrito la-->
+        <label for="email">*E-mail: </label> <!--label pr quando clicar na palavra abrir a caixa pra escrever-->
+        <input type="email" required id="email"> <!--o for e o id precisa ser igual-->
+        <br>
+        <label for="curso">Curso: </label> <!--combobox--> 
+        <select name="curso" id="curso" multiple> <!--multiple envia uma lista para o código-->
+            <option value="info" selected>INFOEWB</option>
+            <option value="adm">Adiministação</option>
+            <option value="msi">Manutenção e Suporte</option>   
+        </select>
+        <br>
+        <label for="nee">Nescessidade específica:</label>
+        <input type="text" +list="list-nee" id="nee">
+        <datalist id="list-nee">
+            <option value="Autismo"></option>
+            <option value="TDAH"></option>
+            <option value="Restrição alimentar"></option>
+        </datalist>
+        <br>
+        <div class="periodo">
+            <label><input type="radio" name="periodo" value="ano1">1° ano</label> <!--se o name for diferente pode  selecionar mais de uma-->
+            <label><input type="radio" name="periodo" value="ano2">2° ano</label><!-- o radio só permite selecionar um, o name cria o grupo e value é o valor que vai para a programação-->
+        </div>
+        <label for="obs">Observações:</label>
+        <textarea name="Observações" maxlength="300" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reiciendis esse qui asperiores maiores iure vel sint enim officiis exercitationem corrupti, delectus voluptatum obcaecati possimus quos architecto voluptatem, reprehenderit voluptates.</textarea>
+
+        <br>
+        <input type="submit" value="ENVIAR">
+        <!-- eles são iguais porem o button pode ser usado fora do formulário, o button é muito usado no js, toda tag de form tem um input/button-sibmit  -->
+        <!-- <button type="submit">ENVIAR</button> -->
+
+    </body>
+</html>

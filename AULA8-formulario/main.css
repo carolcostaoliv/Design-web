@@ -1,0 +1,5 @@
+label[for]{ /**/
+    display: inline-block; /*permitir largura*/
+    width: 12rem;/*por padra é inline ent por causa do display que pode colocar a largura*/
+    vertical-align: top;
+}
