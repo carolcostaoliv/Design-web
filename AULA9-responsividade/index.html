@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- essa tag é muito importante para a responsividade, muda o tamanho da tela pra o tamanho do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assombra CNAT 2025</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Assombra CNAT 2025</h1>
+    </header>
+    <div>
+        <!--
+        1- a tag de picture é expecífica pra responsividade de imagens, dietente da figure que é um contende rpra imagens
+        2- a marcação de source maiores em cima
+        3- pode ser colocada em h1, lista...
+        4- a largura precisa estar relacionada com a largura da imagem-->
+        <picture>
+            <source srcset="destaque_computador.jpg" media="(min-width: 1440px)">
+            <source srcset="destaque_tablet.jpg" media="(min-width: 774px)">
+            <!-- se a tela for menor que o tamanho ela vai se adaptar -->
+            <img src="destaque_celular.jpg" alt= "Imagem de destaque...">
+        </picture>
+    </div>
+    <main>
+        <section>
+            <h2>Organização</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero, ex amet consectetur minima ad dolorum magnam explicabo recusandae porro magni, sapiente pariatur veniam hic, laborum tempore quis suscipit provident!</p>
+        </section>
+        <section>
+            <h2>Organizadores</h2>
+            <p>Sint optio distinctio animi debitis quidem, nesciunt odit quos, quasi quod nisi assumenda! Obcaecati, excepturi totam? A quisquam consequuntur dignissimos cum expedita ea assumenda quam, facere corrupti sit. Molestiae, sed!</p>
+        </section>
+        <section>
+            <h2>Praça de alimentação</h2>
+            <p>Quos, quam? Dolores, qui. Qui natus, error, modi minus debitis nulla provident pariatur necessitatibus iusto nam est veritatis quisquam delectus! Suscipit reprehenderit pariatur dolores impedit, nemo natus mollitia amet soluta.</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Minima, non! Id veniam eaque voluptatibus, illo veritatis quisquam officia voluptatem deleniti perspiciatis alias excepturi ut qui minima vero facere minus hic, repellat velit necessitatibus. Iusto consequatur itaque ut animi.</p>
+        </section>
+    </main>
+    <footer>
+        <p>DESENVOLVIDO IFRN/CNAT/DIATINF/INFOWEB</p>
+    </footer>
+    
+</body>
+</html>

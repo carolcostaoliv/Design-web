@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    /* quando defino um padding pra um elemento que tem largura, o padding altera o tamanho da section, para isso não acontecer usamos esse atributo */
+}
+
+main{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* nescessario para ficar um em cima do outro */
+}
+
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: 20%;
+}
+/* responsividade com midiascreen */
+
+@media (max-width:1440px) {
+    body{
+        background-color: burlywood;
+    }
+    section{
+        /* largura do item que ta com display flex */
+        flex-basis: 45%;
+    }
+    
+}
+@media (max-width:774px) {
+    body{
+        background-color: rgb(218, 223, 153);
+    }
+    section{
+        flex-basis: 90%;
+    }
+    
+}
+
+/* footer{
+    /* border-top: 2rem;
+    border-top: 1px solid black; 
+} */
