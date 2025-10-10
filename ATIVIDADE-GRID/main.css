@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+    grid-template-columns: 200px 1fr 1fr 1fr; 
+    grid-template-areas:
+        "cabecalho cabecalho cabecalho cabecalho"
+        "menu conteudo conteudo conteudo" 
+        "rodape rodape rodape rodape";
+    gap: 1.5rem; 
+}
+
+header { 
+    grid-area: cabecalho;
+    background-image: linear-gradient(to right, #1E4E66, #4F89A9);
+    color: white; 
+    padding: 1.5rem;
+}
+
+nav {
+    grid-area: menu; 
+    background-color: rgb(196, 209, 217); 
+    padding: 2.5rem 1rem; 
+}
+
+main {
+    grid-area: conteudo;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 1.5rem;
+    grid-template-areas: 
+        "evento programacao programacao amanda"
+        "lista inscricao nathalia henrique"
+        "larissa inscricao organizacao organizacao"
+        ; 
+}
+
+footer {
+    grid-area: rodape;
+    background-color: #1E4E66;
+    padding: 2rem; 
+    color: white;
+    text-align: center;
+}
+
+
+section {
+    background-color: rgb(196, 209, 217); 
+    padding: 1.5rem;
+}
+
+
+section.amanda,
+section.nathalia,
+section.henrique,
+section.larissa {
+    padding: 0;
+}
+
+
+section figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+section.evento { 
+    grid-area: evento; 
+}
+section.programacao {
+    grid-area: programacao; 
+    }
+section.amanda {
+    grid-area: amanda; 
+    }
+section.lista { 
+    grid-area: lista; 
+}
+section.inscricao { 
+    grid-area: inscricao; 
+}
+section.nathalia { 
+    grid-area: nathalia; 
+}
+section.henrique { 
+    grid-area: henrique; 
+}
+section.larissa { 
+    grid-area: larissa; 
+}
+section.organizacao { 
+    grid-area: organizacao; 
+}
+
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li a {
+    color: #4F89A9;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.7rem 0; 
+    display: block; 
+}
+
+.tabela { 
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.tabela td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+
+.inscricao form input[type="text"],
+.inscricao form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.70rem;
+    border: 1px solid white;
+}
+
+.enviar {
+    background-color: #333; 
+    color: white;
+    padding: 0.70rem 1.5rem;
+    border: none;
+    font-weight: bold;
+}
+
+--------------------------------
+
+/* *{
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+
+
+body {
+
+  background-color: white;
+
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+
+
+header{    
+
+  background-image: linear-gradient(to right, #1E4E66, #4F89A9);
+
+  color: white;
+
+  padding: 1.5rem;
+
+}
+
+footer{
+
+  background-color: #1E4E66;
+
+  padding: 4rem;
+
+  color: white;
+
+  text-align: center;
+
+}
+
+
+
+section {
+
+  background-color: rgb(240, 240, 240);
+
+  padding: 1.5rem;
+
+  border-top: 1.5rem;
+
+}
+
+ 
+
+main {
+
+  display: grid;
+
+  grid-template-columns: 200px 1fr 1fr 1fr;
+
+  gap: 1.5rem;
+
+  grid-template-areas:
+
+    "menu evento programacao programacao amanda"
+
+    "menu lista inscricao nathalia henrique"
+
+    "menu larissa inscricao organizacao organizacao";
+
+}
+
+
+
+nav {
+
+  grid-area: menu;
+
+}
+
+
+
+section.amanda {
+
+  grid-area: amanda;
+
+}
+
+
+
+section.programacao {
+
+  grid-area: programacao;
+
+}
+
+
+
+section.inscricao {
+
+  grid-area: inscricao;
+
+}
+
+
+
+section.organizacao {
+
+  grid-area: organizacao;
+
+}
+
+
+
+.tabela {
+
+  border-collapse: collapse;
+
+  width: 100%;
+
+  margin-top: 1rem;
+
+}
+
+
+
+.tabela td {
+
+  border: 2px solid white;
+
+  padding: 10px;
+
+}
+
+
+
+nav {
+
+  grid-area: menu;
+
+  background-color: rgb(196, 209, 217);
+
+  padding: 2.5rem 1rem;
+
+  min-height: 100%;
+
+  color: rgb(59, 120, 143);
+
+}
+
+nav li {
+
+  color: rgb(59, 120, 143);
+
+  font-size: 25px;
+
+  list-style: none;
+
+  margin-bottom: 1rem;
+
+ }
+
+
+
+nav ul {
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+} */
