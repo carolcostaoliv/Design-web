@@ -34,7 +34,8 @@ main {
     grid-area: conteudo;
     padding: 1.5rem 1.5rem 1.5rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
     gap: 1.5rem;
     grid-template-areas: 
         "evento programacao programacao amanda"
@@ -66,11 +67,12 @@ section.larissa {
 }
 
 
-section figure img {
+figure img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(90%);
 }
 
 
@@ -130,7 +132,9 @@ nav li a {
     padding: 8px;
 }
 
-
+.inscricao h2{
+    margin-bottom: 1rem;
+}
 .inscricao form input[type="text"],
 .inscricao form input[type="email"] {
     width: 100%;
@@ -145,182 +149,28 @@ nav li a {
     padding: 0.70rem 1.5rem;
     border: none;
     font-weight: bold;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.organizacao  h2{
+    padding-bottom: 1rem;
 }
 
---------------------------------
-
-/* *{
-
-  padding: 0;
-
-  margin: 0;
-
+.organizacao h3{
+    font-weight:lighter;
+}
+ul{
+    padding-left: 1rem;
 }
 
-
-
-body {
-
-  background-color: white;
-
-  font-family: 'Roboto Mono', monospace;
-
+.evento a{
+    text-decoration: none;
+    border: 1px solid #1E4E66;
+    padding: 5px;
+    color: #1E4E66;
+    font-weight: bold;
 }
-
-
-
-header{    
-
-  background-image: linear-gradient(to right, #1E4E66, #4F89A9);
-
-  color: white;
-
-  padding: 1.5rem;
-
+.evento p{
+    margin-bottom: 1rem;
 }
-
-footer{
-
-  background-color: #1E4E66;
-
-  padding: 4rem;
-
-  color: white;
-
-  text-align: center;
-
-}
-
-
-
-section {
-
-  background-color: rgb(240, 240, 240);
-
-  padding: 1.5rem;
-
-  border-top: 1.5rem;
-
-}
-
- 
-
-main {
-
-  display: grid;
-
-  grid-template-columns: 200px 1fr 1fr 1fr;
-
-  gap: 1.5rem;
-
-  grid-template-areas:
-
-    "menu evento programacao programacao amanda"
-
-    "menu lista inscricao nathalia henrique"
-
-    "menu larissa inscricao organizacao organizacao";
-
-}
-
-
-
-nav {
-
-  grid-area: menu;
-
-}
-
-
-
-section.amanda {
-
-  grid-area: amanda;
-
-}
-
-
-
-section.programacao {
-
-  grid-area: programacao;
-
-}
-
-
-
-section.inscricao {
-
-  grid-area: inscricao;
-
-}
-
-
-
-section.organizacao {
-
-  grid-area: organizacao;
-
-}
-
-
-
-.tabela {
-
-  border-collapse: collapse;
-
-  width: 100%;
-
-  margin-top: 1rem;
-
-}
-
-
-
-.tabela td {
-
-  border: 2px solid white;
-
-  padding: 10px;
-
-}
-
-
-
-nav {
-
-  grid-area: menu;
-
-  background-color: rgb(196, 209, 217);
-
-  padding: 2.5rem 1rem;
-
-  min-height: 100%;
-
-  color: rgb(59, 120, 143);
-
-}
-
-nav li {
-
-  color: rgb(59, 120, 143);
-
-  font-size: 25px;
-
-  list-style: none;
-
-  margin-bottom: 1rem;
-
- }
-
-
-
-nav ul {
-
-  list-style: none;
-
-  padding: 0;
-
-  margin: 0;
-
-} */
