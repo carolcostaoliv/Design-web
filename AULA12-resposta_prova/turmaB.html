@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurmaB</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --corprinc: #304563; 
+            --corsec: #516f9c;
+        }
+        body{
+            background-color: var(--corprinc);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(252, 252, 239);
+        }
+        section{
+            max-width: 70rem;
+            gap: 2rem;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section > div{
+            border: 1px solid var(--corsec);
+            padding: 1rem;
+            box-sizing: border-box;
+            flex-basis: 34rem;
+        }
+        section > h2{
+            flex-basis: 100%;
+        }
+        section:first-child{
+            background-color: rgb(202, 78, 74);
+            max-width: 100%;
+            padding: 5rem;
+        }
+        section:nth-child(2){
+            position: relative;
+            top: -50px;
+        }
+     </style>
+</head>
+<body>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam delectus, facilis tempore quam nulla et unde veritatis autem. </p>
+    </section>
+    <section>
+        <div>
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo architecto quibusdam repellendus neque libero itaque sequi eaque consequatur, voluptatem eos? Omnis quasi</p>
+        </div>
+        <div>
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo architecto quibusdam repellendus neque libero itaque sequi eaque consequatur, voluptatem eos? Omnis quasi</p>
+        </div>
+    </section>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, fugiat. Numquam inventore sapiente magnam, quo temporibus esse </p>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade avaliativa- turma A</title> 
+    <!-- toda página deve ter apenas um h1 -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* remove todos os espaçamentos de uma vez, para que possamos ajustar tudo depois */
+        }
+        :root{
+            --corprinc: #304563; 
+            /* cria a variavel, ai caso eu querira mudar, ao mudar a variavel ja muda tudo */
+            --corsec: #516f9c;
+        }
+        body{
+            background-color: var(--corprinc);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(252, 252, 239);
+        }
+        section{
+            max-width: 70rem;
+            gap: 2rem;
+            /* mais responsivo que o width, pois assim não aparece a barra de rolagem */
+            margin: 0 auto;
+            /* como ja coloquei uma largura, quando coloco o margin auto ele ja fica ao centro */
+            /* o 0 é a margem de sima e de baixo, e o automarico para os lados faz com que ele fique no centro */
+            /* não colocamos no main porque el não tem largura definida, poi sai ele vai ocupar o espaço inteiro, não tendo como ficar no centro 
+            mas se eu mudar o max-width e o margin no main da certo*/
+            display: flex;
+            flex-wrap: wrap;
+            /* serve para quebrar a linha das sections */
+            /* flex-direction: column; serva para transformar no mobile para que as sections fiquem uma embaixo da outra */
+        }
+        section > div{
+            border: 1px solid var(--corsec);
+            padding: 1rem;
+            box-sizing: border-box;
+            flex-basis: 34rem;
+        }
+        section > h2{
+            /* width: 100%; também da certo */
+            flex-basis: 100%;
+        }
+        /* main{
+            display: flex;
+            justify-content: center;
+        } */
+         /* section{
+            flex-basis: 70rem;
+         } */
+          /* define a largura, também é responsivo */
+         /* desse deito tb daria certo */
+     </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Serviços</h2>
+            <div>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi voluptate temporibus minus numquam sequi saepe co</p>
+            </div>
+            <div>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi voluptate temporibus minus numquam sequi saepe co</p>
+            </div>
+            <div>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi voluptate temporibus minus numquam sequi saepe co</p>
+            </div>
+            <div>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi voluptate temporibus minus numquam sequi saepe co</p>
+            </div>
+            <div>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi voluptate temporibus minus numquam sequi saepe co</p>
+            </div>
+            <div>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi voluptate temporibus minus numquam sequi saepe co</p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
