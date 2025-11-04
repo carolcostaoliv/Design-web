@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT - Instrodução</title>
+</head>
+<body>
+    <script>
+        document.getElementById("mensagem").innerHTML = "OI do get";
+        // DOM - modelo de documento do objeto 
+        // da erro porque só definimos o id depois, não tem como aplicar isso em algo que ainda n~]ao existe
+    </script>
+
+    <p id = "mensagem"></p>
+
+    <script>
+        /*
+        - js não é java (linguagem de programação lado servidor)
+        - js é uma linguagem de programação (geralmente) lado cliente
+        - js é interpretada (diferente de executada, dependendo do interpretador pode ser interpretada de diferentes formas)
+        - o desenvolvimento web é um tripé:
+            - html é a estrutura, conteúdo
+            -css é o estilo
+            - js é a interatividade, com´portamento...
+                pode ser lado cliente, servidor, mobile e desktop
+                ex: servidor: sugestões na hora da pesquisa
+        */
+
+        window.alert("print");
+        document.write("<p>Oi do write</p>");
+        document.getElementById("mensagem").innerHTML = "OI do get";
+        // inner html - item que ira incluir html no elemento com id... 
+        
+        console.log("oi do console")
+        // no js as variáveis não sao fortimente tipadas (quando escrevemos ja definimos o tipo dela)
+        // pode usar var, let ou const 
+        // var = declaração global (vai ficar na memoria do computador da pessoa, ocupa espaço)
+        // let - declaração local e mais ágil para o sistema 
+        // const - é constante, não é possivel mudar o valor 
+        
+
+        let numint = 3;
+        let text = "INFOWEB";
+        let numfloat = 5.8;
+        let booleano = true;
+        // o mais concatena 
+        console.log(numint + numfloat + text)
+        console.log(54 - 98);
+        console.log(54 * 98);
+        console.log(54 / 98);
+
+        console.log("valor de numint:")
+
+        console.log(numint);
+        console.log(numint++);
+        // ++ = +1 
+        console.log(numint);
+
+        console.log(4==7)
+        console.log(4!=7)
+        console.log(4<=7)
+        console.log(4>=7)
+        sonsole.log(4==4 && 5<=2) 
+        // se ambos forem verdadeiros (and) 
+        console.log(4==5 || 10>5)
+        // se um for verdadeiro (or) 
+        console.log("Como funciona: ===")
+        console.log("3" === 3)
+        // ve se o valor e o tipo sao iguais 
+        console.log("como funciona: ==")
+        console.log("3" == 3)
+
+        let nome = window.prompt("Qual seu nome?")
+        document.write(nome)
+
+        if(nome == "Dani"){
+            alert("Oi Dani")
+        }else{
+            alert("Você não é Dani!"")
+        }
+
+    </script>
+</body>
+</html>
