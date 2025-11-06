@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>Formulário</h2>
+    <label for="n1">N1</label>
+    <input type="text" id="n1">
+
+    <label for="n2">N2</label>
+    <input type="text" id = "n2">
+
+    <button id = "somar">SOMAR</button>
+
+    <p id="resultado"></p>
+
+    
+<!-- w3schools  -->
+
+
+
+    <script>
+            // formulario 
+            const somar = document.querySelector("#somar");
+            // const ép para uma variavel que nao vai mudar o valor 
+            // seleciona amarcação com o id somar 
+            // o # é para que ele pegue o id 
+            somar.addEventListener("click", function(e){
+                console.log("addEventListener");
+                n1 = parseInt(document.getElementById("n1").value);
+                // pega o valor do input com id n1 
+                n2 = parseInt(document.getElementById("n2").value);
+                document.getElementById("resultado").innerHTML = n1+n2;
+                console.log(n1+n2);
+            })
+
+            // arrays - lista de itens 
+            let alunos = [7,8,6,5,4,12];
+            console.log(alunos[2]);
+            // irá exibir o numero 6, começa do 0 
+            alunos.push(5);
+            // adiciona um item 
+
+            alunos[3] = 0;
+            delete alunos[0];
+            // troca o valor por um indefinido, porem ele continua ocupando espaço 
+            console.log(alunos[0]);
+            console.log(alunos.length); 
+            // conta a quantidade de itens 
+
+            let items = ["Luis", "Maria", "Felipe", "Vinícius", "Thiago"];
+            console.log(items[1]);
+
+            let emocoes = ["🙂", "🤩", "🥱", "😡", "🤢", "😧"];
+            console.log(Math.random());
+            // ele vai retornar um numero aleatorio entre 0 e 1 
+            console.log(Math.floor(Math.random()));
+            // floor arredonda pra baixo, retorna 0
+            console.log(Math.floor(Math.random()*10));
+            // quando multiplica por 10, exibi um numero randomico entre 0 e 9
+            let x = Math.floor(Math.random()*6);
+            document.write(`<p> ${emocoes[x]}</p>`);
+            document.write('<p>' + emocoes[x]+ '</p>');
+
+            // estrutura de repetição 
+            for(item in emocoes){
+                document.write(`<p> ${emocoes[item]} </p>`)
+            }
+            // item é o i do for e o for é pra percorrer o array (list) 
+
+            for (let nfor=0; nfor<=5; nfor++){
+                console.log(nfor);
+            }
+            // começa no 0, até quando ele for menor igual que 5 e soma d eum em um 
+            // n é a variavel que criamos 
+            
+            // emocoes.forEach(function(item2=.index)){} 
+
+
+
+        // estrutura condicional (if) 
+        // let cria uma variavel local, se nao botar fica global 
+        let opcao = 2;
+        // let opcao = parseInt(window.prompt("Digite um número de 0 a 2"))
+        // o parseInt converte para inteiro 
+
+        switch(opcao){
+            // break é para que caso ja ache o combativel ja saia do switch, nao passando pelas outras linhas
+            case 0:console.log("taste 0"); break;
+            case 1: console.log("teste 1"); break;
+            case 2: console.log("teste 2"); break;
+            default:
+                // default = else 
+                console.log("teste default"); break;
+        }
+    
+    
+    
+    </script>
+</body>
+</html>
