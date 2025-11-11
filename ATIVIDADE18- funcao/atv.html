@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - função</title>
+</head>
+<body>
+    
+    <p id="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum impedit animi ab quisquam, reiciendis minima voluptates ducimus asperiores, quis quas assumenda dicta porro minus et perferendis, natus aut maiores tempora.</p>
+
+
+    <button id="bt1">maior</button>
+    <button id="bt2">menor</button>
+
+    <script>
+        bt1 = document.getElementById("bt1");
+        bt1.addEventListener("click", function(){
+            document.getElementById("text").style.fontSize = "25px"
+        })
+
+        bt2 = document.getElementById("bt2");
+        bt2.addEventListener("click", function(){
+            document.getElementById("text").style.fontSize = "10px"
+        })
+        </script>
+
+</body>
+</html>

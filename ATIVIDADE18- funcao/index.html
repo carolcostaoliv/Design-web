@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum impedit animi ab quisquam, reiciendis minima voluptates ducimus asperiores, quis quas assumenda dicta porro minus et perferendis, natus aut maiores tempora.</p>
+
+   
+
+    <input type="color" id="cor">
+    <button onclick="mudarcor()">Button atributo onclick</button>
+    <!-- evento dentro da tag não é indicado pq mmistura js com html  -->
+    <button id="bt2">Button com eventListener</button>
+
+
+    <script>
+        let produtos = ["lapis", "tesoura", "borracha"];
+        produtos.forEach(function(item,i,lista){
+            console.log(`Array com for Each: ${item}, ${i}, ${lista}`)
+        })
+
+        function mudarcor(){
+            let cor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = cor;
+        }
+
+        bt2 = document.getElementById("bt2");
+        bt2.addEventListener("click", function(){
+            console.log("sss");
+            let cor = document.getElementById("cor").value;
+            // o value vai pegar o valor que eu selecionei no input color 
+            document.getElementById("texto").style.color = cor
+            // aqui aplica o estilo 
+        })
+
+
+        function somar4(num1=0,num2=0){
+            return num1+num2
+        }
+        console.log(somar4(7)) //o sete, nesse caso, serve pro primeiro parametro
+        function somar5(num1, num2){
+            if(!isNaN(num1) && !isNaN(num2)){ 
+                // isNaN = se não é número. se não for um número = True. por causa da exclamação, vai ser False
+                // ! = diferente
+                return num1+num2;
+            }else
+                return "Passar um número";
+        }
+        console.log(somar5(5,"aaa"));
+        console.log(somar5(5,7));
+        function borda(cor, espessura){
+            document.body.style.borderColor = cor;
+            document.body.style.borderWidth = espessura+'rem';
+            document.body.style.borderStyle = "solid";
+        }
+        borda('blue', 3);
+    </script>
+</body>
+</html>
