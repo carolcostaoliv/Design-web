@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade de JS - nomes</title>
+
+</head>
+
+<body>
+
+    <label>Digite um nome:</label>
+    <input id="nome" type="text">
+    <button id="bt">Adicionar</button>
+
+    <h2>Lista de Nomes:</h2>
+    <p id="lista"></p>
+
+    <script>
+        let lista = ["Duda", "Gustavo", "Heitor"];
+
+        function exibirLista(){
+            let area = document.getElementById("lista");
+            area.innerHTML = lista.join("<br>");
+        }
+
+        exibirLista();
+
+        let btn = document.getElementById("bt");
+
+        btn.addEventListener("click", function(){
+            let nome = document.getElementById("nome").value;
+
+            if(nome !== ""){
+                lista.push(nome);
+                exibirLista();
+                document.getElementById("nome").value = "";
+            }
+        });
+
+    </script>
+
+</body>
+</html>

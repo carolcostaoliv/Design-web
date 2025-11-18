@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade de JS - cores</title>
+
+    <style>
+        button{
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid white;
+            border-radius: 100%;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area"></div>
+
+    <script>
+
+        function fundo(r, g, b){
+            document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+        }
+
+        let area = document.getElementById("area");
+        let conteudo = "";
+
+        for(let i=0; i<100; i++){
+            let r = Math.floor(Math.random()*256);
+            let g = Math.floor(Math.random()*256);
+            let b = Math.floor(Math.random()*256);
+
+            conteudo += 
+                `<button 
+                    onclick="fundo(${r},${g},${b})"
+                    style="background-color: rgb(${r},${g},${b})">
+                </button>`;
+        }
+
+        area.innerHTML = conteudo; 
+
+    </script>
+</body>
+</html>
