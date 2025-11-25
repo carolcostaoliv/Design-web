@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes nativas</title>
+</head>
+<body>
+
+    <p id="diahora"></p>
+
+    <script>
+        let nome = "INFOWEB"
+        console.log("comprimento da string: "+nome.length);
+        console.log("Posição do caracter da string: "+nome.charAt(0));
+        console.log("Substituir strings: "+nome.replace("info", "INFORMATICA PARA INTERNET"));
+        console.log("Divide a string: "+ nome.split("o")[0]);
+        console.log("Minpuscula: "+nome.toLowerCase());
+        nome = "    INFOWEB"
+        console.log(nome)
+        console.log("Remover espaços antes e depois: "+ nome.trim());
+        console.log("Concatena: "+ nome.concat("IFRN"));
+        console.log("Tira os espaços e concatena: "+ nome.trim().concat("IFRN"));
+
+        // FUNÇÕES NATIVAS PARA NÚMEROS 
+        console.log("Valor de PI: "+Math.PI)
+        let num = 54.3;
+        console.log("Arredonda SEMPRE para cima: "+Math.ceil(num));
+        console.log("Arredonda SEMPRE para baixo: "+Math.floor(num));
+        console.log("Arredondamento padrão: "+Math.round(num));
+        console.log("Número randomico: "+Math.random(num)); // vai de 0 a 1
+        console.log("Número randomico: "+Math.random(num)*100);
+        console.log("Potência: "+ Math.pow(2, 4));
+        console.log("Raiz quadrada: "+ Math.sqrt(9));
+
+        // FUNÇÕES NATIVAS COM DATAS 
+        const data = new Date();
+        console.log("Data de hoje: "+ data.getDate()); //pega a data do computador do usuário
+        console.log("Dia da semana: "+ data.getDay()); //dia da semana (retorna um número)
+        console.log("Mês: "+ data.getMonth());
+        console.log("Ano: "+ data.getFullYear);
+        console.log("Ano: "+ data.getHours);
+        console.log("Ano: "+ data.getMinutes);
+
+        function hora(){
+            let d = new Date();
+            document.getElementById("diahora").innerHTML = d.getSeconds();
+        }
+        setInterval(hora,1000);
+        // chama a função a caa milesegundos 
+
+        
+
+    </script>
+    
+</body>
+</html>

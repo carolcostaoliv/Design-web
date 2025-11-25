@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <p id="p"></p>
+    
+    <script>
+        // PASSO 1 console -> 25/11/2025
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        const data = new Date
+        console.log(data.getDate() + "/" + num[data.getMonth()] + "/" + data.getFullYear())
+
+        // PASSO 2 - console -> terça, 25/11/2025 
+        console.log("Terça" + ", "+ data.getDate()+ "/" + num[data.getMonth()] + "/" + data.getFullYear())
+
+        // PASSO 3 - paragrafo -> terça, 25 de novembro de 2025 - hh:mm:ss 
+        let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Desembro"]
+        let dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+
+        document.getElementById("p").innerHTML = (dias[data.getDay] + ", "+ data.getDay()+ " de " + meses[data.getMonth()] + " de " + data.getFullYear())
+
+    </script>
+
+</body>
+</html>
