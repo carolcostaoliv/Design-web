@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de dom</title>
+</head>
+<style>
+    .destaque{
+        background-color: aqua;
+    }
+</style>
+<body>
+    
+    <span>SPAN 1</span>
+    <p class="texto">DOM - Modelo de objeto do documento <span>TEXTO NO SPAN 2</span></p>
+    
+    <!-- span não tem valor semantico -->
+    <p id="paragrafocomid"></p>
+    <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+
+    <figure>
+        <img src="pexels-photo-302355.jpeg" alt="">
+    </figure>
+
+    <button class="trocar">TROCAR IMAGEM</button>
+
+    <script>
+        const pcomid = document.getElementById("paragrafocomid");
+        const pcomclass = document.querySelector(".texto span");
+
+        pcomclass.innerHTML = "<b>TEXTO</b> 2 PARA O SPAN!";
+
+        // document.querySelector(".texto span").style.backgroundColor = "blue";
+        pcomclass.stye.backgroundColor = "blue";
+
+        // a marcação precia ter uma class para adicionar mais
+        document.querySelector(".texto").classList.add(".destaque");
+
+        document.getElementsByTagName("li")[0].style.color = "blue";
+        console.log("TOTAL DE LI's: "+document.getElementsByTagName("li").length);
+        
+        const imagem = document.querySelector("img");
+        console.log(imagem.getAttribute("src"));
+        //.setAtribute("src, "novovalor")
+
+        const trocar = document.querySelector(".trocar");
+
+        function trocar{
+            
+        }
+
+        trocar.addEventListener("click", trocar);
+    </script>
+    
+</body>
+</html>
