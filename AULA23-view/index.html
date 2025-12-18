@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIEW</title>
+    <style>
+        .favorito{
+            color: rgb(76, 86, 180);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+
+    <h1> {{titulo}} </h1>
+    <table>
+        <tr v-for = "contato in contatos"
+            :class = "{'favorito': contato.favorito}"
+            >
+            <td><img width="50" :src="contato.foto"/></td>
+            <td> {{contato.nome}} </td>
+            <td> {{contato.cel}} </td>
+        </tr>
+    </table>
+    </div>
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="agenda.js"></script>
+</body>
+</html>
